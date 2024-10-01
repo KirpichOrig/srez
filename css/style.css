@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    transition: .5s;
+    font-family: "Urbanist", serif;
+}
+/* global */
+.ggg {
+    margin-bottom: 600px;
+}
+body {
+    background: #FAFDF2;
+}
+.section {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.mt-120 {
+    margin-top: 120px;
+}
+.mt-240 {
+    margin-top: 240px;
+}
+.p-120 {
+    padding-top: 120px;
+}
+/* header */
+.header {
+    height: 85px;
+    width: 100%;
+    background: #1A3129;
+}
+.header-content {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.header-nav {
+    display: flex;
+    gap: 40px;
+}
+.header-nav a {
+    color: #FAFDF2;
+    font-weight: 600;
+    font-size: 18px;
+}
+.menu {
+    position: absolute;
+    top: 55px;
+    height: 100px;
+    width: 64px;
+    background: #CBEA7B;
+    border-radius: 4px;
+    /* display: none; */
+}
+.menu a {
+    font-weight: 400;
+    font-size: 14px;
+}
+.tab {
+    display: none;
+}
+/* banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner-title {
+    font-weight: 700;
+    font-size: 48px;
+}
+.banner-text {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 18px;
+}
+/* slide */
+.testimonial_slider {
+    position: relative;
+    overflow: hidden;
+    max-width: max-content;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.testimonial_item {
+    display: none;
+    text-align: center;
+    padding: 2px;
+    background-color: #F6FBE9;
+    border-radius: 10px;
+}
+
+.testimonial_text {
+    font-size: 18px;
+    color: #333;
+    background-color: #FAFDF2;
+    padding: 40px;
+}
+
+.customer_part {
+    display: flex;
+    align-items: center;
+    background-color: #F6FBE9;
+    padding: 30px;
+}
+
+.customer_image img {
+    border-radius: 3%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.customer_name h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+.slider_controls {
+    position: absolute;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+.slider_controls button {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 6px;
+    background: #f6fbe9;
+    border: 1px solid #eef8d3;
+    align-items: center;
+    cursor: pointer;
+    z-index: 990;
+}
+
+.slider_dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -25px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #E5F5BD;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #356554;
+}
+
+.slider__testimonials {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    align-items: center;
+}
+/* price */
+.price-content {
+    max-width: 996px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price-title {
+    font-weight: 700;
+    font-size: 48px;
+}
+.price-text {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+/* check */
+.check {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.check-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 233px;
+    height: 67px;
+    border: 1px solid #DCF1A7;
+    border-radius: 8px;
+}
+.check-nav a {
+    padding: 10px 24px;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+}
+.check-text {
+    font-weight: 500;
+    font-size: 18px;
+    color: #4C4C4D;
+}
+/* price list */
+.price-list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.price-list-dev {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px;
+    max-width: 512px;
+    background: #F6FBE9;
+    border: 1px solid #EEF8D3;
+    border-radius: 12px;
+}
+.price-list-title {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.price-list-title-text {
+    font-weight: 600;
+    font-size: 30px;
+}
+.price-list-title-sale {
+    font-weight: 500;
+    font-size: 18px;
+    color: #4C4C4D;
+}
+.price-list-text {
+    font-weight: 500;
+    font-size: 18px;
+}
+.span-cost {
+    font-weight: 700;
+    font-size: 50px;
+    color: #2C5446;
+}
+.price-list-cost {
+    font-weight: 500;
+    font-size: 18px;
+    color: #333333;
+}
+.price-btn {
+    padding: 18px 41px;
+    background: #CBEA7B;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+}
+/* faq */
+.faq-content {
+    max-width: 996px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.faq-title {
+    font-weight: 700;
+    font-size: 48px;
+}
+.faq-text {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+/* num */
+.num {
+    position: absolute;
+    right: 16px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+/* accord */
+.accord {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: #F6FBE9;
+    border: 1px solid #E5F5BD;
+    border-radius: 12px;
+    padding: 60px;
+    margin-bottom: 50px;
+}
+.accordion-content {
+    display: none;
+}
+.accordion-btn {
+    border: none;
+    cursor: pointer;
+}
+.accord-dev {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+hr {
+    height: 1px;
+    width: 100%;
+    background: #E5F5BD;
+    color: #E5F5BD;
+    border: none;
+}
+.accord-dev-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.accord-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #262626;
+}
+.accord-text {
+    font-weight: 500;
+    font-size: 18px;
+}
